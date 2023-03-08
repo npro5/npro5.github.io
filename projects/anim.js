@@ -38,6 +38,8 @@ class App {
 
         this.SetupCamera();
         this.SetupLight();
+
+        this.animCount = 0;
         this.SetupModel();
         this.SetupControls();
 
@@ -107,7 +109,8 @@ class App {
 
         //relative to html file location
         // new GLTFLoader().load("./study/data/anim_model/anim_model_tmp.glb", (gltf) => {
-        new GLTFLoader().load("./data/anim_model/anim_model_tmp.glb", (gltf) => {
+        // new GLTFLoader().load("./data/anim_model/anim_model_tmp.glb", (gltf) => {
+        new GLTFLoader().load("./data/anim_model/boy.glb", (gltf) => {
             const model = gltf.scene;
             this.scene.add(model);
 
@@ -120,7 +123,8 @@ class App {
             this.SetupAnimation(gltf);
 
             const box = (new THREE.Box3).setFromObject(model);
-            model.position.y = (box.max.y - box.min.y) / 2 + 30;
+            model.position.y = (box.max.y - box.min.y) / 2;
+            // model.position.y = 1000;
             // console.log("s", box.max.y, box.min.y);
             // model.position.y =  - box.min.y;
 
@@ -166,26 +170,28 @@ class App {
 
         gltfAnimations.forEach(animationClip => {
             const name = animationClip.name;
-            console.log(name);
+            // console.log(name);
             const domButton = document.createElement("div");
             domButton.classList.add("button");
             // domButton.textContent = name;
-            domButton.innerText = name;
+            // domButton.innerText = name;
+            domButton.innerText = this.animCount.toString();
+            this.animCount++;
             domControls.appendChild(domButton);
 
             domButton.addEventListener("click", (event) =>{
-                console.log(event);
+                // console.log(event);
                 const animationName = domButton.innerText;
                 this.ChangeAnimation(animationName);
             });
             const animationAction = mixer.clipAction(animationClip);
-            animationsMap[name] = animationAction;
+            animationsMap[domButton.innerText] = animationAction;
         });
 
         this.mixer = mixer;
         this.animationsMap = animationsMap;
         // this.currentAnimationAction = animationsMap["Idle"];
-        this.currentAnimationAction = animationsMap["1"];
+        this.currentAnimationAction = animationsMap["0"];
         this.currentAnimationAction.play();
     }
 

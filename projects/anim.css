@@ -16,12 +16,16 @@ body {
 }
 
 #controls {
-    display: flex;
+    /* display: flex; */
+    display: block;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 5vh;
-    gap: 1vw;
+    /* left: 50%; */
+    right: 0vw;
+    /* transform: translateX(-50%); */
+    transform: translateX(-10%);
+    /* bottom: 5vh; */
+    top: 1vh;
+    gap: 0.5vh;
 }
 
 .button {
@@ -30,9 +34,10 @@ body {
     color: white;
     width: 10vw;
     /* height: 10vw; */
-    font-size: 10vw;
+    font-size: 2.5vh;
     border-radius: 0.5em;
     border: 2px solid white;
+    margin-top: 0.5vh;
     padding: 1em, 2em;
     text-align: center;
     box-shadow: 0 1vw 2vw 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.5);
