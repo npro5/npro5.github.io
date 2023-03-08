@@ -145,6 +145,7 @@ class App {
         domButton.classList.add("button_info");
         domButton.innerText = version;
         // domButton.innerText = name;
+        console.log(domInfo, domButton);
         domInfo.appendChild(domButton);
     }
     SetupAnimation(gltf){
