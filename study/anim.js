@@ -46,6 +46,7 @@ class App {
         this.tSet = 0;
         requestAnimationFrame(this.render.bind(this));
         // this.SetButtons();
+        console.log("version:", 0);
     }
 
     SetupCamera() {
@@ -115,7 +116,7 @@ class App {
 
             const box = (new THREE.Box3).setFromObject(model);
             model.position.y = (box.max.y - box.min.y) / 2 + 30;
-            console.log("s", box.max.y, box.min.y);
+            // console.log("s", box.max.y, box.min.y);
             // model.position.y =  - box.min.y;
 
             // const axisHelper = new THREE.AxesHelper(1000);
