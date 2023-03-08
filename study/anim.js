@@ -47,7 +47,7 @@ class App {
         requestAnimationFrame(this.render.bind(this));
         // this.SetButtons();
 
-        this.SetupInfoDisplay("1")
+        this.SetupInfoDisplay("2")
     }
 
     SetupCamera() {
@@ -142,11 +142,11 @@ class App {
     }
     SetupInfoDisplay(version){
         const domInfo = document.querySelector("#info_display");
-        console.log(domInfo);
+        // console.log(domInfo);
         const domButton = document.createElement("div");
-        console.log(domButton);
+        // console.log(domButton);
         domButton.classList.add("button_info");
-        console.log(domButton);
+        // console.log(domButton);
         domButton.innerText = version;
         // domButton.innerText = name;
         domInfo.appendChild(domButton);
