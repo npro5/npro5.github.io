@@ -115,6 +115,7 @@ class App {
 
             const box = (new THREE.Box3).setFromObject(model);
             model.position.y = (box.max.y - box.min.y) / 2 + 30;
+            // model.position.y =  - box.min.y;
 
             // const axisHelper = new THREE.AxesHelper(1000);
             // this.scene.add(axisHelper);
@@ -166,7 +167,7 @@ class App {
         this.mixer = mixer;
         this.animationsMap = animationsMap;
         // this.currentAnimationAction = animationsMap["Idle"];
-        this.currentAnimationAction = animationsMap["0"];
+        this.currentAnimationAction = animationsMap["1"];
         this.currentAnimationAction.play();
     }
 
