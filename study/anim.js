@@ -101,7 +101,7 @@ class App {
         this.scene.add(plane);
         plane.receiveShadow = true;
 
-        new GLTFLoader().load("./data/anim_model/anim_model_tmp.glb", (gltf) => {
+        new GLTFLoader().load("./study/data/anim_model/anim_model_tmp.glb", (gltf) => {
             const model = gltf.scene;
             this.scene.add(model);
 
