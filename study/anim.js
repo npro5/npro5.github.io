@@ -1,3 +1,4 @@
+//relative to current file location
 // import * as THREE from '../three_js/build/three.module.js';
 import * as THREE from 'three';
 import { OrbitControls } from '../three_js/examples/jsm/controls/OrbitControls.js';
@@ -103,6 +104,7 @@ class App {
         this.scene.add(plane);
         plane.receiveShadow = true;
 
+        //relative to html file location
         // new GLTFLoader().load("./study/data/anim_model/anim_model_tmp.glb", (gltf) => {
         new GLTFLoader().load("./data/anim_model/anim_model_tmp.glb", (gltf) => {
             const model = gltf.scene;
