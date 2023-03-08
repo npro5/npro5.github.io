@@ -20,7 +20,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10vh;
+    bottom: 5vh;
     gap: 1vw;
 }
 

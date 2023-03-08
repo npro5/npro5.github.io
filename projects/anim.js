@@ -60,8 +60,9 @@ class App {
             0.1,
             2000
         );
-        camera.position.z = 200;
-        camera.position.set(0, 100, 500);
+        // camera.position.z = 100;
+        camera.position.set(0, 100, 200);
+        // camera.lookat();
         this.camera = camera;
         this.scene.add(camera);
     }
@@ -202,6 +203,9 @@ class App {
     SetupControls(){
         this.controls = new OrbitControls(this.camera, this.divContainer);
         // this.controls.enableDamping = true;
+        this.controls.target.set(0, 75, 0);
+
+        this.controls.update();
 
         const stats = new Stats();
         this.divContainer.appendChild(stats.dom);
