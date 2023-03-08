@@ -47,7 +47,7 @@ class App {
         requestAnimationFrame(this.render.bind(this));
         // this.SetButtons();
 
-        this.SetupInfoDisplay("0")
+        this.SetupInfoDisplay("1")
     }
 
     SetupCamera() {
