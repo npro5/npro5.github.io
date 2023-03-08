@@ -209,7 +209,7 @@ class App {
     SetupControls(){
         this.controls = new OrbitControls(this.camera, this.divContainer);
         // this.controls.enableDamping = true;
-        this.controls.target.set(0, 75, 0);
+        this.controls.target.set(0, 100, 0);
 
         this.controls.update();
 
