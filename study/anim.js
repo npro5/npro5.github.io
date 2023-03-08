@@ -115,14 +115,15 @@ class App {
 
             const box = (new THREE.Box3).setFromObject(model);
             model.position.y = (box.max.y - box.min.y) / 2 + 30;
+            console.log("s", box.max.y, box.min.y);
             // model.position.y =  - box.min.y;
 
             // const axisHelper = new THREE.AxesHelper(1000);
             // this.scene.add(axisHelper);
 
-            // const boxHelper = new THREE.BoxHelper(model);
-            // this.scene.add(boxHelper);
-            // this.boxHelper = boxHelper;
+            const boxHelper = new THREE.BoxHelper(model);
+            this.scene.add(boxHelper);
+            this.boxHelper = boxHelper;
 
             this.model = model;
         })
