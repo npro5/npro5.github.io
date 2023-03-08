@@ -121,9 +121,9 @@ class App {
             // const axisHelper = new THREE.AxesHelper(1000);
             // this.scene.add(axisHelper);
 
-            const boxHelper = new THREE.BoxHelper(model);
-            this.scene.add(boxHelper);
-            this.boxHelper = boxHelper;
+            // const boxHelper = new THREE.BoxHelper(model);
+            // this.scene.add(boxHelper);
+            // this.boxHelper = boxHelper;
 
             this.model = model;
         })
@@ -214,9 +214,9 @@ class App {
             this.mixer.update(dTSec);
         }
         this.tSec = tSec;
-        if(this.boxHelper){
-            this.boxHelper.update();
-        }
+        // if(this.boxHelper){
+        //     this.boxHelper.update();
+        // }
         this.fps.update();
     }
 }
