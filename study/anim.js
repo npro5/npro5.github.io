@@ -141,11 +141,13 @@ class App {
     }
     SetupInfoDisplay(version){
         const domInfo = document.querySelector("#info_display");
+        console.log(domInfo);
         const domButton = document.createElement("div");
+        console.log(domButton);
         domButton.classList.add("button_info");
+        console.log(domButton);
         domButton.innerText = version;
         // domButton.innerText = name;
-        console.log(domInfo, domButton);
         domInfo.appendChild(domButton);
     }
     SetupAnimation(gltf){
