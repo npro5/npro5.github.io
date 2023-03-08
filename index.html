@@ -3,10 +3,52 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <script>
-        location.replace("./projects/anim.html")
+        function newLocation(url) {
+            window.location.href = url;
+            // location.replace(url)
+        }
+    </script>
+    <script>
+        // newLocation("./projects/anim.html")
     </script>    
+
+    <style>
+        .project_button{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            width: 25vw;
+            font-size: 5vw;
+            border-radius: 0.5em;
+            border: 2px solid white;
+            padding: 1em, 2em;
+            text-align: center;
+            box-shadow: 0 1vw 2vw 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.5);
+            transition-duration: 0.4s;
+            /*important for mobile*/
+            user-select: none;
+        }
+        .project_button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(1vw);
+        }
+
+        #project_button_group{
+            display: flex;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 25vh;
+            gap: 1vw;
+        }             
+    </style>
 </head>
 
 <body>
+    <div id="project_button_group">
+        <button class = "project_button" onclick="newLocation('./projects/anim.html')">animation</button>
+        <button class = "project_button">game</button>
+    </div>
 </body>
 </html>
