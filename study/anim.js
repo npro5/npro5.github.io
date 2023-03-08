@@ -46,7 +46,8 @@ class App {
         this.tSet = 0;
         requestAnimationFrame(this.render.bind(this));
         // this.SetButtons();
-        console.log("version:", 0);
+
+        this.SetupInfoDisplay("0")
     }
 
     SetupCamera() {
@@ -137,6 +138,14 @@ class App {
             prevAnimationAction.fadeOut(0.5);
             this.currentAnimationAction.reset().fadeIn(0.5).play();
         }
+    }
+    SetupInfoDisplay(version){
+        const domInfo = document.querySelector("#info_display");
+        const domButton = document.createElement("div");
+        domButton.classList.add("button_info");
+        domButton.innerText = version;
+        // domButton.innerText = name;
+        domInfo.appendChild(domButton);
     }
     SetupAnimation(gltf){
         const model = gltf.scene;
