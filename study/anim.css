@@ -47,3 +47,29 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(1vw);
 }
+
+#info_display {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    transform: translateX(-50%);
+    bottom: 75vh;
+    gap: 1vw;
+}
+
+.button_info {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    width: 10vw;
+    /* height: 10vw; */
+    font-size: 2vw;
+    border-radius: 0.5em;
+    border: 2px solid white;
+    padding: 1em, 2em;
+    text-align: center;
+    /* box-shadow: 0 1vw 2vw 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.5); */
+    /* transition-duration: 0.4s; */
+    /*important for mobile*/
+    user-select: none;
+}
