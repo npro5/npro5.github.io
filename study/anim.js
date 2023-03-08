@@ -152,13 +152,13 @@ class App {
             console.log(name);
             const domButton = document.createElement("div");
             domButton.classList.add("button");
-            domButton.textContent = name;
-            // domButton.innerText = name;
+            // domButton.textContent = name;
+            domButton.innerText = name;
             domControls.appendChild(domButton);
 
             domButton.addEventListener("click", (event) =>{
                 console.log(event);
-                const animationName = domButton.textContent;
+                const animationName = domButton.innerText;
                 this.ChangeAnimation(animationName);
             });
             const animationAction = mixer.clipAction(animationClip);
