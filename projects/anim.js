@@ -1,1 +1,252 @@
-const _0x44075a=_0x1125;function _0x1125(_0x4c1fe2,_0x5e3e9a){const _0x5a11aa=_0x5a11();return _0x1125=function(_0x11256f,_0x5c21a7){_0x11256f=_0x11256f-0x72;let _0x1354c5=_0x5a11aa[_0x11256f];return _0x1354c5;},_0x1125(_0x4c1fe2,_0x5e3e9a);}(function(_0x381600,_0x2a11e2){const _0x38a7ee=_0x1125,_0x2cf567=_0x381600();while(!![]){try{const _0x205ac9=-parseInt(_0x38a7ee(0xc5))/0x1*(parseInt(_0x38a7ee(0xcc))/0x2)+-parseInt(_0x38a7ee(0xb1))/0x3*(-parseInt(_0x38a7ee(0x86))/0x4)+-parseInt(_0x38a7ee(0xcb))/0x5+-parseInt(_0x38a7ee(0xac))/0x6*(parseInt(_0x38a7ee(0x85))/0x7)+-parseInt(_0x38a7ee(0xae))/0x8+-parseInt(_0x38a7ee(0x9d))/0x9*(-parseInt(_0x38a7ee(0x79))/0xa)+parseInt(_0x38a7ee(0xd0))/0xb;if(_0x205ac9===_0x2a11e2)break;else _0x2cf567['push'](_0x2cf567['shift']());}catch(_0x48355e){_0x2cf567['push'](_0x2cf567['shift']());}}}(_0x5a11,0xd0075));import*as _0x56fb36 from'three';import{OrbitControls}from'../three_js/examples/jsm/controls/OrbitControls.js';import{VertexNormalsHelper}from'../three_js/examples/jsm/helpers/VertexNormalsHelper.js';function _0x5a11(){const _0x1cc6cc=['far','3321EvAjQd','SetupInfoDisplay','right','classList','Mesh','mixer','bottom','animations','AnimationMixer','controls','SetupAnimation','click','SetupControls','currentAnimationAction','ChangeAnimation','8183442wZlfNM','updateProjectionMatrix','10611912ijTOfK','DirectionalLight','./data/anim_model/boy.glb','3592863StRASE','Scene','radius','onload','resize','AmbientLight','bind','width','WebGLRenderer','#webgl-container','tSec','PlaneGeometry','traverse','domElement','#controls','button_info','setPixelRatio','shadowMap','PerspectiveCamera','Color','327927rBwYbs','onresize','background','setSize','min','camera','4653060rXgLkW','2llHEkr','load','fps','divContainer','35834106uCuDkv','clientWidth','name','devicePixelRatio','scene','receiveShadow','update','SetButtons','reset','innerText','innerHeight','fadeIn','castShadow','9370fPZrAC','SetupLight','button','enabled','querySelector','render','createElement','add','max','target','clipAction','log','7NebDfN','4BpESVk','innerWidth','appendChild','clientHeight','left','animCount','position','fadeOut','model','mapSize','renderer','BasicShadowMap','setFromObject','div','type','toString','shadow','addEventListener','dom','SetupModel','animationsMap','SetupCamera'];_0x5a11=function(){return _0x1cc6cc;};return _0x5a11();}import{GLTFLoader}from'../three_js/examples/jsm/loaders/GLTFLoader.js';import _0x10ecdc from'../three_js/examples/jsm/libs/stats.module.js';class App{constructor(){const _0x831dbf=_0x1125,_0x3016aa=document[_0x831dbf(0x7d)](_0x831dbf(0xba));this['divContainer']=_0x3016aa;const _0x208d5f=new _0x56fb36[(_0x831dbf(0xb9))]({'antialias':!![]});_0x208d5f[_0x831dbf(0xc1)](window[_0x831dbf(0xd3)]),_0x208d5f['setSize'](window[_0x831dbf(0x87)],window[_0x831dbf(0x76)]),_0x208d5f['shadowMap'][_0x831dbf(0x7c)]=!![],_0x208d5f[_0x831dbf(0xc2)]['type']=_0x56fb36[_0x831dbf(0x91)],_0x3016aa['appendChild'](_0x208d5f[_0x831dbf(0xbe)]),this[_0x831dbf(0x90)]=_0x208d5f;const _0x35cd5b=new _0x56fb36[(_0x831dbf(0xb2))]();_0x35cd5b[_0x831dbf(0xc7)]=new _0x56fb36[(_0x831dbf(0xc4))](0x7f7f7f),this[_0x831dbf(0xd4)]=_0x35cd5b,this['SetupCamera'](),this[_0x831dbf(0x7a)](),this[_0x831dbf(0x8b)]=0x0,this[_0x831dbf(0x99)](),this[_0x831dbf(0xa9)](),window[_0x831dbf(0xc6)]=this[_0x831dbf(0xb5)]['bind'](this),this[_0x831dbf(0xb5)](),this['tSet']=0x0,requestAnimationFrame(this['render'][_0x831dbf(0xb7)](this)),this[_0x831dbf(0x9e)]('2');}[_0x44075a(0x9b)](){const _0x2b8b50=_0x44075a,_0x5e8af8=this[_0x2b8b50(0xcf)][_0x2b8b50(0xd1)],_0x5a6837=this[_0x2b8b50(0xcf)][_0x2b8b50(0x89)],_0x32bd14=new _0x56fb36[(_0x2b8b50(0xc3))](0x4b,_0x5e8af8/_0x5a6837,0.1,0x7d0);_0x32bd14[_0x2b8b50(0x8c)]['set'](0x0,0x64,0xc8),this[_0x2b8b50(0xca)]=_0x32bd14,this[_0x2b8b50(0xd4)]['add'](_0x32bd14);}['SetupLight'](){const _0x42e319=_0x44075a,_0x142757=new _0x56fb36[(_0x42e319(0xb6))](0xffffff,0.5);this[_0x42e319(0xd4)][_0x42e319(0x80)](_0x142757);const _0x5375da=0xffffff,_0x5d997c=0x5,_0x583641=new _0x56fb36[(_0x42e319(0xaf))](_0x5375da,_0x5d997c);_0x583641[_0x42e319(0x8c)]['set'](0x64,0xc8,0x64),this[_0x42e319(0xd4)][_0x42e319(0x80)](_0x583641),_0x583641['castShadow']=!![],_0x583641[_0x42e319(0x96)][_0x42e319(0x8f)][_0x42e319(0xb8)]=0x200,_0x583641[_0x42e319(0x96)][_0x42e319(0x8f)]['height']=0x200,_0x583641[_0x42e319(0x96)][_0x42e319(0xca)]['top']=_0x583641['shadow']['camera'][_0x42e319(0x9f)]=0x2bc,_0x583641['shadow']['camera'][_0x42e319(0xa3)]=_0x583641[_0x42e319(0x96)][_0x42e319(0xca)][_0x42e319(0x8a)]=-0x2bc,_0x583641[_0x42e319(0x96)][_0x42e319(0xca)]['near']=0x64,_0x583641['shadow'][_0x42e319(0xca)][_0x42e319(0x9c)]=0x3e8,_0x583641[_0x42e319(0x96)][_0x42e319(0xb3)]=0x5;}[_0x44075a(0x99)](){const _0x4b305a=_0x44075a,_0x396bfd=new _0x56fb36[(_0x4b305a(0xbc))](0x3e8,0x3e8),_0x23e824=new _0x56fb36['MeshPhongMaterial']({'color':0x878787}),_0x408876=new _0x56fb36[(_0x4b305a(0xa1))](_0x396bfd,_0x23e824);_0x408876['rotation']['x']=-Math['PI']/0x2,this['scene'][_0x4b305a(0x80)](_0x408876),_0x408876[_0x4b305a(0xd5)]=!![],new GLTFLoader()[_0x4b305a(0xcd)](_0x4b305a(0xb0),_0x576e7d=>{const _0x337c23=_0x4b305a,_0x4c1671=_0x576e7d[_0x337c23(0xd4)];this['scene']['add'](_0x4c1671),_0x4c1671[_0x337c23(0xbd)](_0x3dd886=>{const _0xfcd493=_0x337c23;_0x3dd886 instanceof _0x56fb36[_0xfcd493(0xa1)]&&(_0x3dd886[_0xfcd493(0x78)]=!![]);}),this[_0x337c23(0xa7)](_0x576e7d);const _0x4f11a4=new _0x56fb36['Box3']()[_0x337c23(0x92)](_0x4c1671);_0x4c1671[_0x337c23(0x8c)]['y']=(_0x4f11a4[_0x337c23(0x81)]['y']-_0x4f11a4[_0x337c23(0xc9)]['y'])/0x2,this[_0x337c23(0x8e)]=_0x4c1671;});}[_0x44075a(0xab)](_0x2c2bde){const _0x43ae56=_0x44075a,_0x59df5a=this['currentAnimationAction'];this[_0x43ae56(0xaa)]=this[_0x43ae56(0x9a)][_0x2c2bde],_0x59df5a!==this['currentAnimationAction']&&(_0x59df5a[_0x43ae56(0x8d)](0.5),this[_0x43ae56(0xaa)][_0x43ae56(0x74)]()[_0x43ae56(0x77)](0.5)['play']());}['SetupInfoDisplay'](_0x3e1c7b){const _0x425b55=_0x44075a,_0x282256=document[_0x425b55(0x7d)]('#info_display'),_0x362944=document[_0x425b55(0x7f)](_0x425b55(0x93));_0x362944[_0x425b55(0xa0)][_0x425b55(0x80)](_0x425b55(0xc0)),_0x362944[_0x425b55(0x75)]=_0x3e1c7b,_0x282256[_0x425b55(0x88)](_0x362944);}[_0x44075a(0xa7)](_0x43efe9){const _0x541366=_0x44075a,_0x5d87ac=_0x43efe9['scene'],_0x2a0bd5=new _0x56fb36[(_0x541366(0xa5))](_0x5d87ac),_0x3a1365=_0x43efe9[_0x541366(0xa4)],_0x7e12bf=document[_0x541366(0x7d)](_0x541366(0xbf)),_0x168558={};_0x3a1365['forEach'](_0x1ee73c=>{const _0x368ae3=_0x541366,_0x243874=_0x1ee73c[_0x368ae3(0xd2)],_0x4a00c2=document[_0x368ae3(0x7f)](_0x368ae3(0x93));_0x4a00c2[_0x368ae3(0xa0)][_0x368ae3(0x80)](_0x368ae3(0x7b)),_0x4a00c2['innerText']=this['animCount'][_0x368ae3(0x95)](),this[_0x368ae3(0x8b)]++,_0x7e12bf[_0x368ae3(0x88)](_0x4a00c2),_0x4a00c2[_0x368ae3(0x97)](_0x368ae3(0xa8),_0x3165e8=>{const _0x2bcf77=_0x368ae3,_0x11034c=_0x4a00c2[_0x2bcf77(0x75)];this[_0x2bcf77(0xab)](_0x11034c);});const _0x4b0517=_0x2a0bd5[_0x368ae3(0x83)](_0x1ee73c);_0x168558[_0x4a00c2[_0x368ae3(0x75)]]=_0x4b0517;}),this['mixer']=_0x2a0bd5,this[_0x541366(0x9a)]=_0x168558,this[_0x541366(0xaa)]=_0x168558['0'],this[_0x541366(0xaa)]['play']();}[_0x44075a(0x73)](){const _0x260aa2=_0x44075a,_0x33296b=document[_0x260aa2(0x7d)](_0x260aa2(0xbf)),_0xa36ee9=document['createElement'](_0x260aa2(0x93));_0xa36ee9['classList'][_0x260aa2(0x80)](_0x260aa2(0x7b)),_0xa36ee9['textContent']=_0x260aa2(0xd2),_0x33296b[_0x260aa2(0x88)](_0xa36ee9),console[_0x260aa2(0x84)](_0xa36ee9[_0x260aa2(0x94)]);}[_0x44075a(0xa9)](){const _0x3ae894=_0x44075a;this[_0x3ae894(0xa6)]=new OrbitControls(this[_0x3ae894(0xca)],this['divContainer']),this[_0x3ae894(0xa6)][_0x3ae894(0x82)]['set'](0x0,0x64,0x0),this[_0x3ae894(0xa6)][_0x3ae894(0x72)]();const _0x1419f4=new _0x10ecdc();this[_0x3ae894(0xcf)][_0x3ae894(0x88)](_0x1419f4[_0x3ae894(0x98)]),this[_0x3ae894(0xce)]=_0x1419f4;}['resize'](){const _0x4a4d9e=_0x44075a,_0x478b10=this[_0x4a4d9e(0xcf)][_0x4a4d9e(0xd1)],_0x3d5a57=this[_0x4a4d9e(0xcf)][_0x4a4d9e(0x89)];this[_0x4a4d9e(0xca)]['aspect']=_0x478b10/_0x3d5a57,this[_0x4a4d9e(0xca)][_0x4a4d9e(0xad)](),this[_0x4a4d9e(0x90)][_0x4a4d9e(0xc8)](_0x478b10,_0x3d5a57);}[_0x44075a(0x7e)](_0x2d54d0){const _0x5827dd=_0x44075a;this[_0x5827dd(0x90)][_0x5827dd(0x7e)](this[_0x5827dd(0xd4)],this[_0x5827dd(0xca)]),this[_0x5827dd(0x72)](_0x2d54d0),requestAnimationFrame(this['render'][_0x5827dd(0xb7)](this));}[_0x44075a(0x72)](_0x222dec){const _0x5cf264=_0x44075a,_0x123f12=_0x222dec*0.001,_0x4e7eef=_0x123f12-this[_0x5cf264(0xbb)];this['mixer']&&this[_0x5cf264(0xa2)][_0x5cf264(0x72)](_0x4e7eef),this[_0x5cf264(0xbb)]=_0x123f12,this[_0x5cf264(0xce)][_0x5cf264(0x72)]();}}window[_0x44075a(0xb4)]=function(){new App();};
+//relative to current file location
+// import * as THREE from '../three_js/build/three.module.js';
+import * as THREE from 'three';
+import { OrbitControls } from '../three_js/examples/jsm/controls/OrbitControls.js';
+//import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+import { VertexNormalsHelper } from '../three_js/examples/jsm/helpers/VertexNormalsHelper.js';
+// import { VertexNormalsHelper } from 'three/addons/helpers/VertexNormalsHelper.js';
+
+// import Stats from '../three_js/examples/jsm/libs/stats.module.js';
+
+import { GLTFLoader } from '../three_js/examples/jsm/loaders/GLTFLoader.js';
+
+import Stats from '../three_js/examples/jsm/libs/stats.module.js';
+
+class App {
+    constructor() {
+        const divContainer = document.querySelector("#webgl-container");
+        this.divContainer = divContainer;
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.BasicShadowMap;
+        // renderer.shadowMap.type = THREE.PCFShadowMap;
+        // renderer.shadowMap.type = THREE.PCFSoftShadowMap ;
+        // renderer.shadowMap.type = THREE.VSMShadowMap;
+        
+
+        divContainer.appendChild(renderer.domElement);
+        this.renderer = renderer;
+
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x7f7f7f);
+        this.scene = scene;
+
+        this.SetupCamera();
+        this.SetupLight();
+
+        this.animCount = 0;
+        this.SetupModel();
+        this.SetupControls();
+
+        window.onresize = this.resize.bind(this);
+        this.resize();
+
+        this.tSet = 0;
+        requestAnimationFrame(this.render.bind(this));
+        // this.SetButtons();
+
+        this.SetupInfoDisplay("2")
+    }
+
+    SetupCamera() {
+        const width = this.divContainer.clientWidth;
+        const height = this.divContainer.clientHeight;
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            width/height,
+            0.1,
+            2000
+        );
+        // camera.position.z = 100;
+        camera.position.set(0, 100, 300);
+        // camera.lookat();
+        this.camera = camera;
+        this.scene.add(camera);
+    }
+
+    SetupLight() {
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        this.scene.add(ambientLight);
+
+        const color = 0xffffff;
+        const intensity = 5;
+        const light = new THREE.DirectionalLight(color, intensity);
+        light.position.set(100, 200, 100);
+        this.scene.add(light);
+
+        // const lightHelper = new THREE.DirectionalLightHelper(light, 10);
+        // this.scene.add(lightHelper);
+
+        light.castShadow = true;
+        // light.shadow.mapSize.width  = 1024;
+        // light.shadow.mapSize.height = 1024;
+        light.shadow.mapSize.width  = 512;
+        light.shadow.mapSize.height = 512;
+        light.shadow.camera.top = light.shadow.camera.right     = 700;
+        light.shadow.camera.bottom = light.shadow.camera.left   = -700;
+        light.shadow.camera.near    = 100;
+        light.shadow.camera.far     = 1000;
+        light.shadow.radius         = 5;
+
+        // const shadowCameraHelper = new THREE.CameraHelper(light.shadow.camera);
+        // this.scene.add(shadowCameraHelper);
+        
+        // this.camera.add(light);
+    }
+
+    SetupModel() {
+        const planeGeometry = new THREE.PlaneGeometry(1000, 1000);
+        const planeMaterial = new THREE.MeshPhongMaterial({color: 0x878787});
+        const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+        plane.rotation.x = -Math.PI/2;
+        this.scene.add(plane);
+        plane.receiveShadow = true;
+
+        //relative to html file location
+        // new GLTFLoader().load("./study/data/anim_model/anim_model_tmp.glb", (gltf) => {
+        // new GLTFLoader().load("./data/anim_model/anim_model_tmp.glb", (gltf) => {
+        new GLTFLoader().load("./data/anim_model/boy.glb", (gltf) => {
+            const model = gltf.scene;
+            this.scene.add(model);
+
+            model.traverse(child => {
+                if(child instanceof THREE.Mesh){
+                    // console.log(child);
+                    child.castShadow = true;
+                }
+            });
+            this.SetupAnimation(gltf);
+
+            const box = (new THREE.Box3).setFromObject(model);
+            model.position.y = (box.max.y - box.min.y) / 2;
+            // model.position.y = 1000;
+            // console.log("s", box.max.y, box.min.y);
+            // model.position.y =  - box.min.y;
+
+            // const axisHelper = new THREE.AxesHelper(1000);
+            // this.scene.add(axisHelper);
+
+            // const boxHelper = new THREE.BoxHelper(model);
+            // this.scene.add(boxHelper);
+            // this.boxHelper = boxHelper;
+
+            this.model = model;
+        })
+    }
+
+    ChangeAnimation(animationName){
+        const prevAnimationAction = this.currentAnimationAction;
+        this.currentAnimationAction = this.animationsMap[animationName];
+        if(prevAnimationAction !== this.currentAnimationAction){
+            prevAnimationAction.fadeOut(0.5);
+            this.currentAnimationAction.reset().fadeIn(0.5).play();
+        }
+    }
+    SetupInfoDisplay(version){
+        const domInfo = document.querySelector("#info_display");
+        // console.log(domInfo);
+        const domButton = document.createElement("div");
+        // console.log(domButton);
+        domButton.classList.add("button_info");
+        // console.log(domButton);
+        domButton.innerText = version;
+        // domButton.innerText = name;
+        domInfo.appendChild(domButton);
+    }
+    SetupAnimation(gltf){
+        const model = gltf.scene;
+        const mixer = new THREE.AnimationMixer(model);
+        const gltfAnimations = gltf.animations;
+
+        const domControls = document.querySelector("#controls");
+    //    console.log(domControls);
+ 
+        const animationsMap = {};
+
+        gltfAnimations.forEach(animationClip => {
+            const name = animationClip.name;
+            // console.log(name);
+            const domButton = document.createElement("div");
+            domButton.classList.add("button");
+            // domButton.textContent = name;
+            // domButton.innerText = name;
+            domButton.innerText = this.animCount.toString();
+            this.animCount++;
+            domControls.appendChild(domButton);
+
+            domButton.addEventListener("click", (event) =>{
+                // console.log(event);
+                const animationName = domButton.innerText;
+                this.ChangeAnimation(animationName);
+            });
+            const animationAction = mixer.clipAction(animationClip);
+            animationsMap[domButton.innerText] = animationAction;
+        });
+
+        this.mixer = mixer;
+        this.animationsMap = animationsMap;
+        // this.currentAnimationAction = animationsMap["Idle"];
+        this.currentAnimationAction = animationsMap["0"];
+        this.currentAnimationAction.play();
+    }
+
+    SetButtons(){
+        const domControls = document.querySelector("#controls");
+        const domButton = document.createElement("div");
+        domButton.classList.add("button");
+        // domButton.textContent = 'name';
+        domButton.textContent = "name";
+        // domButton.value = "button";
+        domControls.appendChild(domButton);
+        // domButton.type = "submit";
+        console.log(domButton.type);
+    }
+    SetupControls(){
+        this.controls = new OrbitControls(this.camera, this.divContainer);
+        // this.controls.enableDamping = true;
+        this.controls.target.set(0, 100, 0);
+
+        this.controls.update();
+
+        const stats = new Stats();
+        this.divContainer.appendChild(stats.dom);
+        this.fps = stats;
+    }
+    resize() {
+        const width = this.divContainer.clientWidth;
+        const height = this.divContainer.clientHeight;
+        this.camera.aspect = width/height;
+        this.camera.updateProjectionMatrix();
+        this.renderer.setSize(width, height);
+    }
+
+    render(time) {
+        this.renderer.render(this.scene, this.camera);
+        this.update(time);
+        requestAnimationFrame(this.render.bind(this));
+    }
+
+    update(time) {
+        const tSec = time * 0.001;  //msec->sec
+        const dTSec = tSec - this.tSec;
+
+        if(this.mixer){
+            // console.log(dTSec);
+            this.mixer.update(dTSec);
+        }
+        this.tSec = tSec;
+        // if(this.boxHelper){
+        //     this.boxHelper.update();
+        // }
+        this.fps.update();
+    }
+}
+
+window.onload = function() {
+    new App();
+}
